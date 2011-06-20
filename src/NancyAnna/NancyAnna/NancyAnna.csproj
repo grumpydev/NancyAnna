@@ -65,7 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainModule.cs" />
-    <Compile Include="NancyAnnaBootstrapper.cs" />
     <Compile Include="NancyResponse.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
