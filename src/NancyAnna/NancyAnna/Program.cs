@@ -18,7 +18,7 @@ namespace NancyAnna
             {
                 Console.WriteLine("Listening on http://localhost:4789/");
 
-                server.Subscribe(ctx =>
+                server.RAW("/*").Subscribe(ctx =>
                     {
                         var request = ctx.Request.ToNancyRequest();
 

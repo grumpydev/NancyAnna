@@ -7,7 +7,7 @@
 
     public static class RequestExtensions
     {
-        public static Nancy.Request ToNancyRequest(this Anna.Request request)
+        public static Nancy.Request ToNancyRequest(this Anna.Request.Request request)
         {
             return new Nancy.Request(
                 request.HttpMethod,
