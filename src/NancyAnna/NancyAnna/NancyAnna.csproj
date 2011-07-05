@@ -38,13 +38,16 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Anna">
+    <Reference Include="Anna, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\dependencies\Anna\Anna.dll</HintPath>
     </Reference>
-    <Reference Include="Nancy">
+    <Reference Include="Nancy, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\dependencies\Nancy\Nancy.dll</HintPath>
     </Reference>
-    <Reference Include="Nancy.ViewEngines.Razor">
+    <Reference Include="Nancy.ViewEngines.Razor, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\dependencies\Nancy\Nancy.ViewEngines.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System" />
