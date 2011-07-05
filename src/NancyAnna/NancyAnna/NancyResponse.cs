@@ -24,15 +24,13 @@
             var bodyStream = new MemoryStream();
             response.Contents.Invoke(bodyStream);
             this.body = bodyStream.ToArray();
-            this.WriteStream = Write;
         }
 
-        public IObservable<Stream> Write(Stream stream)
+        public override IObservable<Stream> WriteStream(Stream stream)
         {
             var bytes = this.body;
             return Observable.FromAsyncPattern<byte[], int, int>(stream.BeginWrite, stream.EndWrite)(bytes, 0, bytes.Length)
-                .Select(u => stream);
+               .Select(u => stream);
         }
-
     }
 }
